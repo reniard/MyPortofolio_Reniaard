@@ -28,7 +28,7 @@
 
     <section class="project-section">
         <h2 class="section-title">My Projects</h2>
-        <p class="project-subtitle">Kumpulan karya dan kontribusi saya dalam dunia teknologi dan desain ✨</p>
+        <p class="project-subtitle">Kumpulan karya dan kontribusi saya dalam dunia teknologi ✨</p>
 
         <!-- Project Card -->
         <div class="project-container">
@@ -36,7 +36,9 @@
                 <img src="assets/selvoi.jpeg" alt="Selvoi" class="project-image small-img">
                 <div class="project-text">
                     <h3>Selvoi (Silent Voice)</h3>
-                    <p>Aplikasi penerjemah bahasa isyarat secara realtime menggunakan MediaPipe dan Deep Learning.</p>
+                    <p>Aplikasi penerjemah bahasa isyarat secara realtime menggunakan MediaPipe dan Deep Learning.
+                        Dikembangkan untuk mendukung komunikasi inklusif antara penyandang tunarungu dan masyarakat
+                        umum.</p>
                     <a href="https://github.com/reniaa/selvoi" target="_blank" class="btn-github">Lihat di GitHub</a>
                 </div>
             </div>
@@ -45,8 +47,8 @@
                 <img src="assets/chatbotfeluna.jpeg" alt="Feluna" class="project-image small-img">
                 <div class="project-text">
                     <h3>Feluna</h3>
-                    <p>Aplikasi untuk membantu meredakan nyeri menstruasi dengan fitur treatment dan monitoring siklus.
-                    </p> <p>Membuat design halaman chatbot </p>
+                    <p>Aplikasi mobile yang membantu meredakan nyeri menstruasi melalui fitur treatment harian, chatbot
+                        pintar, serta monitoring siklus haid. Solusi digital untuk kesehatan perempuan.</p>
                     <a href="https://github.com/reniaa/feluna" target="_blank" class="btn-github">Lihat di GitHub</a>
                 </div>
             </div>
@@ -55,7 +57,8 @@
                 <img src="assets/game.jpeg" alt="Dungeon Courier" class="project-image">
                 <div class="project-text">
                     <h3>Game Dungeon Courier</h3>
-                    <p>Game petualangan berbasis Unity dan script C# dengan gaya visual retro RPG.</p>
+                    <p>Game petualangan 2D berbasis Unity dan C# dengan tema Fantasy Medieval. Pemain berperan sebagai
+                        kurir yang harus mengantar paket dan melewati berisi tantangan dan rintangan.</p>
                     <a href="https://github.com/reniard/Dungon_Courier_Game" target="_blank" class="btn-github">Lihat di
                         GitHub</a>
                 </div>
@@ -65,8 +68,10 @@
                 <img src="assets/streamlit.png" alt="Streamlit" class="project-image">
                 <div class="project-text">
                     <h3>Visualisasi Data Disabilitas</h3>
-                    <p>Visualisasi data penyandang disabilitas 2021 menggunakan Streamlit dari data resmi BPS.</p>
-                    <a href="https://github.com/reniard/Visualisasi_Tunawicara_DataBPS" target="_blank" class="btn-github">Lihat di GitHub</a>
+                    <p>Visualisasi interaktif menggunakan Streamlit untuk menampilkan data penyandang disabilitas
+                        Indonesia tahun 2021 dari BPS. Menyediakan insight berbasis grafik dan filter interaktif.</p>
+                    <a href="https://github.com/reniard/Visualisasi_Tunawicara_DataBPS" target="_blank"
+                        class="btn-github">Lihat di GitHub</a>
                 </div>
             </div>
 
@@ -74,9 +79,10 @@
                 <img src="assets/farmasialamin.png" alt="Web Profile SMK" class="project-image">
                 <div class="project-text">
                     <h3>Web Profile SMK Farmasi Al-Amin</h3>
-                    <p>Website informatif untuk menampilkan profil dan fasilitas sekolah SMK Farmasi Al-Amin.</p>
-                    <a href="https://github.com/reniard/WebProfile_SMK_Farmasi_Al_Amin" target="_blank" class="btn-github">Lihat di
-                        GitHub</a>
+                    <p>Website resmi berbasis HTML/CSS/JavaScript untuk menampilkan profil sekolah, fasilitas, dan
+                        informasi akademik SMK Farmasi Al-Amin secara modern dan responsif.</p>
+                    <a href="https://github.com/reniard/WebProfile_SMK_Farmasi_Al_Amin" target="_blank"
+                        class="btn-github">Lihat di GitHub</a>
                 </div>
             </div>
 
@@ -84,13 +90,45 @@
                 <img src="assets/spk.png" alt="SPK WP" class="project-image">
                 <div class="project-text">
                     <h3>Web SPK - Metode WP</h3>
-                    <p>Aplikasi berbasis web untuk menentukan leadership terbaik menggunakan metode Weighted Product.
-                    </p>
-                    <a href="https://github.com/reniard/SPKWeb_MetodeWP" target="_blank" class="btn-github">Lihat di GitHub</a>
+                    <p>Aplikasi web berbasis Laravel untuk mendukung pengambilan keputusan dalam pemilihan leader
+                        terbaik. Menggunakan metode Weighted Product (WP) untuk perhitungan multi-kriteria yang
+                        objektif.</p>
+                    <a href="https://github.com/reniard/SPKWeb_MetodeWP" target="_blank" class="btn-github">Lihat di
+                        GitHub</a>
                 </div>
             </div>
+
+            <div class="project-card">
+                <img src="assets/felunaweb.jpeg" alt="Dungeon Courier" class="project-image">
+                <div class="project-text">
+                    <h3>Feluna Website Admin</h3>
+                    <p>Platform berbasis web yang berfungsi sebagai dashboard admin untuk mengelola data pengguna, memantau aktivitas treatment, serta mengatur konten dan notifikasi pada aplikasi Feluna. Dirancang untuk mendukung pengelolaan sistem kesehatan perempuan secara efektif dan efisien.
+                    </p>
+                    <a href="https://github.com/reniard/Dungon_Courier_Game" target="_blank" class="btn-github">Lihat di
+                        GitHub</a>
+                </div>
+            </div>
+
         </div>
+
     </section>
+
+    <script>
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.animationPlayState = 'running';
+                    observer.unobserve(entry.target); // animasi hanya sekali
+                }
+            });
+        }, {
+            threshold: 0.1
+        });
+
+        document.querySelectorAll('.project-card').forEach(card => {
+            observer.observe(card);
+        });
+    </script>
 </body>
 
 <!-- Footer -->
@@ -130,26 +168,26 @@
 
 <!-- Lightbox untuk preview gambar -->
 <div class="img-lightbox" id="lightbox">
-  <img src="" alt="Preview" id="lightbox-img">
+    <img src="" alt="Preview" id="lightbox-img">
 </div>
 
 <script>
-  const lightbox = document.getElementById("lightbox");
-  const lightboxImg = document.getElementById("lightbox-img");
+    const lightbox = document.getElementById("lightbox");
+    const lightboxImg = document.getElementById("lightbox-img");
 
-  // Biar semua <img> bisa diklik untuk preview
-  document.querySelectorAll("img").forEach(img => {
-    img.style.cursor = "pointer";
-    img.addEventListener("click", () => {
-      lightboxImg.src = img.src;
-      lightbox.style.display = "flex";
+    // Biar semua <img> bisa diklik untuk preview
+    document.querySelectorAll("img").forEach(img => {
+        img.style.cursor = "pointer";
+        img.addEventListener("click", () => {
+            lightboxImg.src = img.src;
+            lightbox.style.display = "flex";
+        });
     });
-  });
 
-  // Klik di luar gambar untuk tutup
-  lightbox.addEventListener("click", () => {
-    lightbox.style.display = "none";
-  });
+    // Klik di luar gambar untuk tutup
+    lightbox.addEventListener("click", () => {
+        lightbox.style.display = "none";
+    });
 </script>
 
 
