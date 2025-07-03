@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Project - Renia Rahma Dewi</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="brand">
+            My Portofolio
+            <small>Renia Rahma Dewi</small>
+        </div>
+        <div class="nav-menu">
+            <a href="index.html">Beranda</a>
+            <a href="project.html" class="active">Project</a>
+            <a href="experience.html">Experience</a>
+            <a href="organisasi.html">Organisasi</a>
+            <a href="sertifikat.html">Sertifikat</a>
+            <a href="galeri.html">Galeri</a>
+        </div>
+    </div>
+
+    <section class="project-section">
+        <h2 class="section-title">My Projects</h2>
+        <p class="project-subtitle">Kumpulan karya dan kontribusi saya dalam dunia teknologi dan desain ✨</p>
+
+        <!-- Project Card -->
+        <div class="project-container">
+            <div class="project-card">
+                <img src="assets/selvoi.jpeg" alt="Selvoi" class="project-image small-img">
+                <div class="project-text">
+                    <h3>Selvoi (Silent Voice)</h3>
+                    <p>Aplikasi penerjemah bahasa isyarat secara realtime menggunakan MediaPipe dan Deep Learning.</p>
+                    <a href="https://github.com/reniaa/selvoi" target="_blank" class="btn-github">Lihat di GitHub</a>
+                </div>
+            </div>
+
+            <div class="project-card reverse">
+                <img src="assets/chatbotfeluna.jpeg" alt="Feluna" class="project-image small-img">
+                <div class="project-text">
+                    <h3>Feluna</h3>
+                    <p>Aplikasi untuk membantu meredakan nyeri menstruasi dengan fitur treatment dan monitoring siklus.
+                    </p> <p>Membuat design halaman chatbot </p>
+                    <a href="https://github.com/reniaa/feluna" target="_blank" class="btn-github">Lihat di GitHub</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="assets/game.jpeg" alt="Dungeon Courier" class="project-image">
+                <div class="project-text">
+                    <h3>Game Dungeon Courier</h3>
+                    <p>Game petualangan berbasis Unity dan script C# dengan gaya visual retro RPG.</p>
+                    <a href="https://github.com/reniard/Dungon_Courier_Game" target="_blank" class="btn-github">Lihat di
+                        GitHub</a>
+                </div>
+            </div>
+
+            <div class="project-card reverse">
+                <img src="assets/streamlit.png" alt="Streamlit" class="project-image">
+                <div class="project-text">
+                    <h3>Visualisasi Data Disabilitas</h3>
+                    <p>Visualisasi data penyandang disabilitas 2021 menggunakan Streamlit dari data resmi BPS.</p>
+                    <a href="https://github.com/reniard/Visualisasi_Tunawicara_DataBPS" target="_blank" class="btn-github">Lihat di GitHub</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="assets/farmasialamin.png" alt="Web Profile SMK" class="project-image">
+                <div class="project-text">
+                    <h3>Web Profile SMK Farmasi Al-Amin</h3>
+                    <p>Website informatif untuk menampilkan profil dan fasilitas sekolah SMK Farmasi Al-Amin.</p>
+                    <a href="https://github.com/reniard/WebProfile_SMK_Farmasi_Al_Amin" target="_blank" class="btn-github">Lihat di
+                        GitHub</a>
+                </div>
+            </div>
+
+            <div class="project-card reverse">
+                <img src="assets/spk.png" alt="SPK WP" class="project-image">
+                <div class="project-text">
+                    <h3>Web SPK - Metode WP</h3>
+                    <p>Aplikasi berbasis web untuk menentukan leadership terbaik menggunakan metode Weighted Product.
+                    </p>
+                    <a href="https://github.com/reniard/SPKWeb_MetodeWP" target="_blank" class="btn-github">Lihat di GitHub</a>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="footer-content">
+        <h2>Thanks For Coming</h2>
+        <p>Kalo kata orang tuh katanya Tak Kenal Maka Tak Sayang.<br>Active on : </p>
+
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/renia-rahma-dewi-b70491254" class="social-icon" title="LinkedIn"
+                target="_blank">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://wa.me/6288239034842" class="social-icon" title="WhatsApp" target="_blank">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="https://www.instagram.com/ng_xviii" class="social-icon" title="Instagram" target="_blank">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://github.com/reniard" class="social-icon" title="GitHub" target="_blank">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="mailto:dewi85280@gmail.com" class="social-icon" title="Email" target="_blank">
+                <i class="fas fa-envelope"></i>
+            </a>
+        </div>
+
+
+        <hr>
+
+        <div class="footer-bottom">
+            <span>2025 © Renia Rahma Dewi</span>
+        </div>
+    </div>
+    </div>
+</footer>
+
+<!-- Lightbox untuk preview gambar -->
+<div class="img-lightbox" id="lightbox">
+  <img src="" alt="Preview" id="lightbox-img">
+</div>
+
+<script>
+  const lightbox = document.getElementById("lightbox");
+  const lightboxImg = document.getElementById("lightbox-img");
+
+  // Biar semua <img> bisa diklik untuk preview
+  document.querySelectorAll("img").forEach(img => {
+    img.style.cursor = "pointer";
+    img.addEventListener("click", () => {
+      lightboxImg.src = img.src;
+      lightbox.style.display = "flex";
+    });
+  });
+
+  // Klik di luar gambar untuk tutup
+  lightbox.addEventListener("click", () => {
+    lightbox.style.display = "none";
+  });
+</script>
+
+
+</html>

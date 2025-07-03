@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Experience - Renia Rahma Dewi</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="navbar">
+        <div class="brand">
+            My Portofolio
+            <small>Renia Rahma Dewi</small>
+        </div>
+        <div class="nav-menu">
+            <a href="index.html">Beranda</a>
+            <a href="project.html">Project</a>
+            <a href="experience.html" class="active">Experience</a>
+            <a href="organisasi.html">Organisasi</a>
+            <a href="sertifikat.html">Sertifikat</a>
+            <a href="galeri.html">Galeri</a>
+        </div>
+    </div>
+
+    <section class="experience-section">
+        <h2>My Experience</h2>
+
+        <!-- PKL -->
+        <div class="exp-card">
+            <div class="exp-photo">
+                <img src="assets/pkl.jpg" alt="PKL">
+            </div>
+            <div class="exp-info">
+                <h3>Praktik Kerja Lapangan (2021)</h3>
+                <p><strong>Instansi:</strong> SKI Komputer</p>
+                <ul>
+                    <li>Merakit dan memperbaiki komputer (bongkar pasang CPU, pembersihan)</li>
+                    <li>Instalasi ulang sistem operasi (Windows)</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- PPM -->
+        <div class="exp-card reverse">
+            <div class="exp-photo">
+                <img src="assets/ppm.jpeg" alt="PPM">
+            </div>
+            <div class="exp-info">
+                <h3>Pengabdian Pada Masyarakat (2024)</h3>
+                <p><strong>Lokasi:</strong> SMK Farmasi Al-Amin</p>
+                <ul>
+                    <li>Membuat Web Profile Sekolah</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- PKM -->
+        <div class="exp-card">
+            <div class="exp-photo">
+                <img src="assets/felunaweb.jpeg" alt="PKM">
+            </div>
+            <div class="exp-info">
+                <h3>Produk Kreatif Mahasiswa (2025)</h3>
+                <p><strong>Peran:</strong> Peserta</p>
+                <ul>
+                    <li>Membuat Aplikasi Mobile Feluna</li>
+                    <li>Membuat Website Feluna (Admin & User)</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Selvoi -->
+        <div class="exp-card reverse">
+            <div class="exp-photo">
+                <img src="assets/webselvoi.png" alt="Selvoi">
+            </div>
+            <div class="exp-info">
+                <h3>Pengembangan Aplikasi Mobile Selvoi (2025)</h3>
+                <ul>
+                    <li>Membuat Prototype Design Web & Mobile</li>
+                    <li>Membuat Aplikasi Web & Mobile Selvoi</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <h2>Thanks For Coming</h2>
+            <p>Kalo kata orang tuh katanya Tak Kenal Maka Tak Sayang.<br>Active on : </p>
+
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/renia-rahma-dewi-b70491254" class="social-icon" title="LinkedIn" target="_blank">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://wa.me/6288239034842" class="social-icon" title="WhatsApp" target="_blank">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+                <a href="https://www.instagram.com/ng_xviii" class="social-icon" title="Instagram" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://github.com/reniard" class="social-icon" title="GitHub" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="mailto:dewi85280@gmail.com" class="social-icon" title="Email" target="_blank">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+
+
+            <hr>
+
+            <div class="footer-bottom">
+                <span>2025 © Renia Rahma Dewi</span>
+            </div>
+        </div>
+        </div>
+    </footer>
+
+    <!-- Lightbox untuk preview gambar -->
+<div class="img-lightbox" id="lightbox">
+  <img src="" alt="Preview" id="lightbox-img">
+</div>
+
+<script>
+  const lightbox = document.getElementById("lightbox");
+  const lightboxImg = document.getElementById("lightbox-img");
+
+  // Biar semua <img> bisa diklik untuk preview
+  document.querySelectorAll("img").forEach(img => {
+    img.style.cursor = "pointer";
+    img.addEventListener("click", () => {
+      lightboxImg.src = img.src;
+      lightbox.style.display = "flex";
+    });
+  });
+
+  // Klik di luar gambar untuk tutup
+  lightbox.addEventListener("click", () => {
+    lightbox.style.display = "none";
+  });
+</script>
+
+</body>
+
+</html>
